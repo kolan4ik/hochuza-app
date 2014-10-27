@@ -87,7 +87,6 @@
     display: none;
 }
 
-/* Weekdays */
 .gldp-default .mon,
 .gldp-default .tue,
 .gldp-default .wed,
@@ -107,8 +106,6 @@
     line-height: 28px !important;
     color: #00ae9d;
 }
-
-/* Weekend days */
 .gldp-default .sat,
 .gldp-default .sun {
     color: #00ae9d;
@@ -121,8 +118,6 @@
     height: 28px !important;
     text-align: center;
 }
-
-/* Selectable days that are outside of current month being shown */
 .gldp-default .outday {
     color: #c3c2c3 !important;
     width: 28px !important;
@@ -144,9 +139,7 @@
     display: inline-block;
     line-height: 28px !important;
     border: none !important;
-
 }
-
 .prev-arrow{
     color: transparent;
     font-size: 0;
@@ -168,7 +161,3 @@
     position: relative;
 }
 
-
-.datepicker {
-
-}
