@@ -6,20 +6,20 @@
 
 }
 .gldp-default .core {
-	box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	position: relative;
-	float: left;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    position: relative;
+    float: left;
     width: 28px !important;
     line-height: 28px !important;
     border: none !important;
     height: 28px !important;
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	cursor: pointer;
-	color: #00ae9d;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    cursor: pointer;
+    color: #00ae9d;
     font-size: 14px !important;
 }
 .core{
@@ -27,9 +27,9 @@
 }
 /* Cell border */
 .gldp-default .border {
-	border-style: solid;
-	border-width: 0;
-	border-color: #888;
+    border-style: solid;
+    border-width: 0;
+    border-color: #888;
 }
 
 /* Month/Year text and select */
@@ -39,41 +39,47 @@
 }
 .gldp-default .monyear,
 .gldp-default .monyear select {
-	font-size: 16px !important;
-	font-weight: bold;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+    font-size: 16px !important;
+    font-weight: bold;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
     border: none;
 
+
+}
+.gldp-default select + span,
+.gldp-default select {
+    display: none !important;
 
 }
 
 /* Month/Year text */
 .gldp-default .monyear span {
-	margin: 0 5px 0 5px;
+    margin: 0 5px 0 5px;
     color: #00ad9d;
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
     font-weight: normal;
+    display: inline-block !important;
 }
 .core span:nth-child(3){
-    display: none;
+    display: none !important;
 }
 /* Prev/Next arrows */
 .gldp-default .prev-arrow,
 .gldp-default .next-arrow {
-	color: #222;
-	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+    color: #222;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
 }
 
 .gldp-default .prev-arrow:active,
 .gldp-default .next-arrow:active {
-	color: #f00;
+    color: #f00;
 }
 
 .gldp-default .prev-arrow-off,
 .gldp-default .next-arrow-off {
-	color: #222;
-	opacity: 0.15;
+    color: #222;
+    opacity: 0.15;
 }
 
 /* Days of the week */

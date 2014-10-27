@@ -46,6 +46,10 @@
 
 
 }
+.gldp-default select {
+    display: none !important;
+
+}
 
 /* Month/Year text */
 .gldp-default .monyear span {
