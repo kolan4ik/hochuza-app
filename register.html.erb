@@ -1,0 +1,52 @@
+<%= render :partial => "head", :locals => {:bodyClass => ""} %>
+
+<%= render :partial => "swiperModal" %>
+<%= render :partial => "menu" %>
+
+
+
+<div class="container">
+    <div class="scroller">
+        <header class="header">
+            <span class="header__btnPrev"></span>
+            <div class="header__txt">
+                Регистрация
+            </div>
+        </header>
+        <div class="content login">
+            <form class="form" action="/">
+                <div class="login__logo"></div>
+                <div class="form__section">
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="Как Вас зовут?"/>
+                    </div>
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="E-mail"/>
+                    </div>
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="Номер телефона"/>
+                        <div class="form__fld__hint">
+                            На этот номер будет отправлен код подтверждения
+                        </div>
+                    </div>
+                    <div class="form__fld">
+                        <input type="password" class="icontrol" placeholder="Придумайте пароль"/>
+                        <div class="form__fld__hint form__fld__hint_gray">
+                            Более шести символов
+                        </div>
+                    </div>
+                    <div class="form__fld">
+                        <input type="password" class="icontrol" placeholder="Повторите пароль"/>
+                    </div>
+                </div>
+                <button class="btnGn" type="submit">сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%= render :partial => "js" %>
+
+</body>
+</html>
+
+

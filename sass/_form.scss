@@ -1,0 +1,360 @@
+::-webkit-input-placeholder {
+    color: #a3a3a3;
+}
+
+:-moz-placeholder {
+    color: #a3a3a3;
+}
+
+.placeholder {
+    color: #a3a3a3;
+}
+
+.icontrol {
+    @include box-sizing(border-box);
+    display: block;
+    width: 100%;
+    height: 40px;
+    padding: 5px 12px;
+    font-size: 15px;
+    background-color: #ffffff;
+    background-image: none;
+    border: 0;
+    color: rgba(0, 0, 0, .75);
+    -webkit-appearance: none;
+    border-radius: 0;
+    &.error {
+        border: 1px solid red;
+        background-color: #fff2f2;
+    }
+    &.icontrol_qnt {
+        width: 80px;
+        font-family: helveticaneuecyr;
+        text-align: center;
+    }
+}
+
+textarea {
+    &.icontrol {
+        padding: 9px 2px 9px 12px;
+    }
+}
+
+.form {
+
+}
+
+.form__section {
+    margin: 0 0 12px;
+
+    .btnExpand {
+        position: relative;
+    }
+
+    &.form__section_hidden{
+        display: none;
+    }
+}
+
+.form__section__hidden {
+    height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    .form__section__hidden {
+        height: auto;
+    }
+}
+
+.form__fld {
+    @extend .clearfix;
+    margin: 5px 0;
+
+    &.form__fld_row {
+        .form__fld__title {
+            float: left;
+        }
+        .icontrol {
+            float: right;
+        }
+    }
+
+    &.form__fld_search {
+        position: relative;
+        button {
+            position: absolute;
+            right: 7px;
+            top: 50%;
+            margin-top: -12px;
+            text-align: center;
+            z-index: 2;
+            border: 0;
+            padding: 0;
+            background: none;
+            width: 25px;
+            height: 25px;
+            &:after {
+                content: "";
+                @include image-2x("../images/icon_magnifier@2x.png", 15px, 16px);
+                @include bg-image("../images/icon_magnifier.png", false, true);
+                width: 15px;
+                height: 16px;
+                display: inline-block;
+                margin-top: 5px;
+            }
+        }
+
+        input {
+            z-index: 1;
+            position: relative;
+            padding-right: 40px;
+        }
+    }
+}
+
+.form__fld__hint {
+    font-size: 12px;
+    color: #00ae9d;
+    padding: 0 12px;
+    margin-top: 4px;
+    &.form__fld__hint_gray {
+        color: rgba(0, 0, 0, .5);
+    }
+}
+
+.form__fld__title {
+    font-size: 15px;
+    color: #00ae9d;
+    margin: 11px 0;
+    &.form__fld__title_gray {
+        color: rgba(0, 0, 0, .5);
+    }
+}
+
+.preview-product {
+    overflow: hidden;
+    margin: 0 0 25px;
+    clear: both;
+}
+
+.preview-gallery {
+    font: 14px Verdana, Geneva, sans-serif;
+    text-align: justify;
+    line-height: 0;
+    font-size: 1px;
+    text-justify: newspaper;
+    text-align-last: justify;
+    &:after {
+        width: 100%;
+        height: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        content: '';
+        display: inline-block;
+    }
+}
+
+.add-photo {
+    font-size: 0;
+    color: transparent;
+    border: 1px solid #e0e5e3;
+    width: 65px;
+    height: 65px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    background: #fafafa;
+    text-align: left;
+    line-height: normal;
+    vertical-align: top;
+    &:before {
+        content: "";
+        @include image-2x("../images/icon_add@2x.png", 13px, 13px);
+        @include bg-image("../images/icon_add@2x.png", false, true);
+        width: 14px;
+        height: 14px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin: -7px 0 0 -7px;
+    }
+}
+
+.add-photo input {
+    background: transparent;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    font-size: 0;
+    color: transparent;
+    cursor: pointer;
+}
+
+.avaInput {
+    text-align: center;
+    label {
+        width: 215px;
+        height: 215px;
+        @include border-radius(50%);
+        display: -moz-inline-stack;
+        display: inline-block;
+        vertical-align: top;
+        background-size: 215px;
+        background-repeat: no-repeat;
+    }
+    input {
+        background: transparent;
+        opacity: 0;
+        width: 1px;
+        height: 1px;
+        font-size: 0;
+        color: transparent;
+        cursor: pointer;
+    }
+}
+
+
+
+/* CHECKBOX */
+
+.checkboxHolder {
+    label {
+        padding-top: 1px;
+        font-size: 12px;
+    }
+}
+
+.bt-checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    width: 22px;
+    height: 23px;
+    position: relative;
+    background: white;
+    margin-right: 8px;
+    margin-top: -1px;
+}
+
+.bt-checker {
+    display: block;
+
+    width: 22px;
+    height: 23px;
+    position: relative;
+    @include image-2x("../images/checkbox@2x.png", 22px, 23px);
+    @include bg-image("../images/checkbox.png", false, true);
+
+}
+
+.bt-checker.checked {
+    @include image-2x("../images/checkbox_checked@2x.png", 22px, 23px);
+    @include bg-image("../images/checkbox_checked.png", false, true);
+}
+
+/* SELECT */
+
+.bt-dropdown {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    background: white;
+    width: 100%;
+    @include box-sizing(border-box);
+    z-index: 20;
+}
+
+.bt-dropdown-toggle {
+    display: block;
+    padding: 11px 12px;
+    font-size: 15px;
+    position: relative;
+    text-decoration: none;
+    text-align: left;
+    @include box-sizing(border-box);
+    width: 100% !important;
+}
+
+.bt-dropdown-toggle span.icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 9px 9px;
+    border-color: transparent transparent #00ae9d transparent;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+}
+
+.bt-dropdown-options {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background: white;
+    width: 100%;
+    right: -1px;
+    max-height: 250px;
+    overflow: auto;
+}
+
+.bt-dropdown.initialized .bt-dropdown-options {
+    position: absolute;
+}
+
+.bt-dropdown.closed .bt-dropdown-options {
+    display: none;
+}
+
+.bt-dropdown.open .bt-dropdown-toggle {
+    color: #ccc;
+}
+
+.bt-dropdown.open .bt-dropdown-toggle span.icon {
+    background-position: -445px -94px;
+}
+
+.bt-dropdown-option {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: left;
+    border-top: 1px solid #ccc;
+}
+
+.bt-dropdown-option a {
+
+    text-decoration: none;
+    display: block;
+    padding: 10px 10px;
+}
+
+.bt-dropdown-option:hover {
+    background: rgba(0, 0, 0, .08);
+
+}
+
+.bt-dropdown-option:hover a {
+    color: rgba(0, 0, 0, .75);
+}
+
+.bt-dropdown.notMobile select {
+    display: none;
+}
+
+.bt-dropdown.mobile select {
+    font-size: 16px;
+    position: absolute;
+    display: block;
+    z-index: 9999;
+    opacity: 0;
+    -webkit-appearance: menulist-button;
+    top: 0px;
+    left: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+

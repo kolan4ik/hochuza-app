@@ -1,0 +1,54 @@
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.tar {
+    text-align: right !important;
+}
+
+.tal {
+    text-align: left !important;
+}
+
+.tac {
+    text-align: center !important;
+}
+
+.fright {
+    float: right  !important;
+}
+
+.fleft {
+    float: left  !important;
+}
+
+.mt0 {
+    margin-top: 0 !important;
+}
+
+.ml0 {
+    margin-left: 0 !important;
+}
+
+.mr0 {
+    margin-right: 0 !important;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+
+.h90{
+    height: 90px !important;
+}

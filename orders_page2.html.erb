@@ -1,0 +1,70 @@
+<%= render :partial => "head", :locals => {:bodyClass => ""} %>
+
+<%= render :partial => "menu" %>
+
+<div class="container">
+
+    <div class="scroller">
+        <header class="header">
+            <span class="header__btnMenu">Мои заявки</span>
+            <span class="header__btnPlus"></span>
+        </header>
+        <div class="content">
+            <div class="orders">
+                <div class="listing1__item listing1__item_nobg">
+                    <div class="listing1__item__img">
+
+                        <img src="images/temp/small-photo2.jpg" alt=""/>
+
+                        <span class="listing1__item__img__qnt">3</span>
+                        <span class="listing1__item__img__label">3/5</span>
+                    </div>
+                    <div class="listing1__item__content">
+                        <p>
+                            От Земли Луна удалена всего-то на 380 000 км.
+                            Это единственный внеземной мир космоса...
+                        </p>
+                        <span class="listing1__item__price">До <strong>2 000</strong> грн</span>
+                    </div>
+                </div>
+
+                <ul class="orders__menu orders__menu_2">
+                    <li><a href="#">Заявка</a></li>
+                    <li class="selected"><a href="#">предложения</a></li>
+                </ul>
+
+                <div class="listing1">
+                    <% 4.times do %>
+                        <a href="#" class="listing1__item listing1__item_t2">
+                            <div class="listing1__item__img">
+                                <img src="images/cart@2x.jpg" alt=""/>
+                            </div>
+                            <div class="listing1__item__content">
+                                <div class="listing1__item__title">
+                                    FoxTrot
+                                </div>
+                                <div class="listing1__item__info">
+                                    Купили заявку <strong>01/10/14</strong>
+                                </div>
+                                <div class="listing1__item__info">
+                                    Выполним до <strong>07/10/14</strong>
+                                </div>
+                            </div>
+                        </a>
+                    <% end %>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<%= render :partial => "js" %>
+
+</body>
+</html>
+
+

@@ -1,0 +1,215 @@
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon_users {
+    @include image-2x("../images/icon_users@2x.png", 19px, 16px);
+    @include bg-image("../images/icon_users.png", false, true);
+    height: 16px;
+    width: 19px;
+}
+
+.icon_payDetails {
+    @include image-2x("../images/icon_payDetails@2x.png", 19px, 15px);
+    @include bg-image("../images/icon_payDetails.png", false, true);
+    height: 15px;
+    width: 19px;
+}
+
+.icon_moder {
+    @include image-2x("../images/icon_moder@2x.png", 19px, 21px);
+    @include bg-image("../images/icon_moder.png", false, true);
+    height: 21px;
+    width: 19px;
+}
+
+.icon_parsing {
+    @include image-2x("../images/icon_parsing@2x.png", 19px, 16px);
+    @include bg-image("../images/icon_parsing.png", false, true);
+    height: 16px;
+    width: 19px;
+}
+
+.icon_balance {
+    @include image-2x("../images/icon_balance@2x.png", 10px, 20px);
+    @include bg-image("../images/icon_balance.png", false, true);
+    width: 10px;
+    height: 20px;
+}
+
+.icon_shops {
+    @include image-2x("../images/icon_shops@2x.png", 19px, 22px);
+    @include bg-image("../images/icon_shops.png", false, true);
+    width: 19px;
+    height: 22px;
+}
+
+.icon_personal {
+    @include image-2x("../images/icon_personal@2x.png", 19px, 20px);
+    @include bg-image("../images/icon_personal.png", false, true);
+    width: 19px;
+    height: 20px;
+}
+
+.icon_admins {
+    @include image-2x("../images/icon_admins@2x.png", 19px, 16px);
+    @include bg-image("../images/icon_admins.png", false, true);
+    width: 19px;
+    height: 16px;
+}
+
+
+
+
+
+.icon_calendar {
+    @include image-2x("../images/icon_calendar@2x.png", 13px, 12px);
+    @include bg-image("../images/icon_calendar.png", false, true);
+    width: 13px;
+    height: 12px;
+}
+
+.icon_mark {
+    @include image-2x("../images/icon_mark@2x.png", 9px, 12px);
+    @include bg-image("../images/icon_mark.png", false, true);
+    width: 9px;
+    height: 12px;
+}
+
+.icon_lock {
+    @include image-2x("../images/icon_lock@2x.png", 9px, 12px);
+    @include bg-image("../images/icon_lock.png", false, true);
+    width: 9px;
+    height: 12px;
+}
+.icon_no_user {
+    @include image-2x("../images/icon_no_user@2x.png", 48px, 55px);
+    @include bg-image("../images/icon_no_user.png", false, true);
+    width: 48px;
+    height: 55px;
+    margin: 12px 0;
+}
+
+.icon_key {
+    @include image-2x("../images/icon_key@2x.png", 16px, 6px);
+    @include bg-image("../images/icon_key.png", false, true);
+    width: 16px;
+    height: 6px;
+}
+
+.icon_plus_big {
+    @include image-2x("../images/icon_plus_62x62@2x.png", 62px, 62px);
+    @include bg-image("../images/icon_plus_62x62.png", false, true);
+    width: 62px;
+    height: 62px;
+}
+
+
+
+
+.icon_home {
+    @include image-2x("../images/icon_home@2x.png", 21px, 21px);
+    @include bg-image("../images/icon_home.png", false, true);
+    width: 21px;
+    height: 21px;
+}
+
+.icon_order {
+    @include image-2x("../images/icon_order@2x.png", 20px, 20px);
+    @include bg-image("../images/icon_order.png", false, true);
+    width: 20px;
+    height: 20px;
+}
+.icon_settings {
+    @include image-2x("../images/icon_settings@2x.png", 20px, 21px);
+    @include bg-image("../images/icon_settings.png", false, true);
+    width: 20px;
+    height: 21px;
+}
+
+
+
+.menu {
+    .icon {
+        margin-right: 13px;
+        margin-top: -2px;
+    }
+    .icon_balance{
+        margin-right: 18px;
+        margin-left: 4px;
+    }
+
+    .icon_home{
+        margin-left: 0px;
+        margin-right: 11px;
+    }
+    .icon_order{
+        margin-left: 1px;
+        margin-right: 12px;
+    }
+    .icon_settings{
+        margin-left: 2px;
+        margin-right: 11px;
+    }
+    a {
+        &:active, &.active, &:hover {
+            .icon_users {
+                @include image-2x("../images/icon_users_act@2x.png", 19px, 16px);
+                @include bg-image("../images/icon_users_act.png", false, true);
+            }
+
+            .icon_payDetails {
+                @include image-2x("../images/icon_payDetails_act@2x.png", 19px, 15px);
+                @include bg-image("../images/icon_payDetails_act.png", false, true);
+            }
+
+            .icon_moder {
+                @include image-2x("../images/icon_moder_act@2x.png", 19px, 21px);
+                @include bg-image("../images/icon_moder_act.png", false, true);
+            }
+
+            .icon_parsing {
+                @include image-2x("../images/icon_parsing_act@2x.png", 19px, 16px);
+                @include bg-image("../images/icon_parsing_act.png", false, true);
+            }
+
+            .icon_balance {
+                @include image-2x("../images/icon_balance_act@2x.png", 10px, 20px);
+                @include bg-image("../images/icon_balance_act.png", false, true);
+            }
+
+            .icon_shops {
+                @include image-2x("../images/icon_shops_act@2x.png", 19px, 22px);
+                @include bg-image("../images/icon_shops_act.png", false, true);
+            }
+
+            .icon_personal {
+                @include image-2x("../images/icon_personal_act@2x.png", 19px, 20px);
+                @include bg-image("../images/icon_personal_act.png", false, true);
+            }
+
+            .icon_admins {
+                @include image-2x("../images/icon_admins_act@2x.png", 19px, 16px);
+                @include bg-image("../images/icon_admins_act.png", false, true);
+            }
+
+            .icon_home {
+                @include image-2x("../images/icon_home_act@2x.png", 21px, 21px);
+                @include bg-image("../images/icon_home_act.png", false, true);
+
+            }
+
+            .icon_order {
+                @include image-2x("../images/icon_order_act@2x.png", 20px, 20px);
+                @include bg-image("../images/icon_order_act.png", false, true);
+
+            }
+            .icon_settings {
+                @include image-2x("../images/icon_settings_act@2x.png", 20px, 21px);
+                @include bg-image("../images/icon_settings_act.png", false, true);
+
+            }
+        }
+    }
+}

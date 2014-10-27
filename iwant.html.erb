@@ -1,0 +1,120 @@
+<%= render :partial => "head", :locals => {:bodyClass => ""} %>
+
+<%= render :partial => "swiperModal" %>
+<%= render :partial => "menu" %>
+
+
+<div class="container">
+
+    <div class="scroller">
+        <header class="header">
+            <span class="header__btnMenu">Я хочу...</span>
+            <span class="header__btnPlus"></span>
+        </header>
+        <div class="content">
+            <form class="form" action="/">
+                <section class="form__section">
+
+                    <a class="btnShowModal" href="#" data-target-id="swiperModal">Показать попап</a>
+
+                    <div class="form__fld">
+                        <textarea class="icontrol h90" placeholder="Пожалуйста, введите описание необходимого товара или услуги..." cols="30" rows="10">Морозильная камера, LG, отдельностоящая белая, объемом от 13 л, перенавешиваемая дверца, автозаморозка, система ноу-фрост...</textarea>
+                    </div>
+
+                    <div class="form__fld form__fld_row">
+                        <div class="form__fld__title">
+                            Желаемая стоимость <strong>до</strong>, грн:
+                        </div>
+                        <input type="text" class="icontrol icontrol_qnt" value="3 000"/>
+                    </div>
+                </section>
+
+                <hr/>
+
+                <div class="form__section">
+                    <div class="form__fld">
+                        <select class="select">
+                            <option>Город, страна</option>
+                            <option selected="selected">Киев, Украина</option>
+                            <option>Киев, Украина</option>
+                        </select>
+                    </div>
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="Телефон" value="+38 (093) 12-34-567"/>
+                    </div>
+
+                    <div class="form__fld">
+                        <div class="form__fld__title">
+                            Не хватает слов? Добавь фото мечты!
+                        </div>
+                        <div class="preview-product">
+                            <div class="preview-gallery">
+                                <span class="add-photo"><input type="file" name="file" value=""></span>
+                                <span class="add-photo"><input type="file" name="file" value=""></span>
+                                <span class="add-photo"><input type="file" name="file" value=""></span>
+                                <span class="add-photo"><input type="file" name="file" value=""></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="form__section">
+                    <div class="btnExpand">
+                        <div class="btnExpand__txt">
+                            развернуть всё... <i class="btnExpand__icon"></i>
+                        </div>
+                        <div class="btnExpand__txt">
+                            свернуть... <i class="btnExpand__icon"></i>
+                        </div>
+                    </div>
+
+
+                    <div class="form__section__hidden">
+                        <div class="form__fld">
+                            <div class="form__fld__title form__fld__title_gray">
+                                Товар нужен до:
+                            </div>
+                            <div class="datepicker">
+                                <input type="text" class="mydate icontrol" id="mydate"/>
+                            </div>
+                        </div>
+                        <div class="form__fld">
+                            <div class="form__fld__title form__fld__title_gray mb0">
+                                Предложений не более:
+                            </div>
+                            <div class="swipeSpinner">
+                                <div class="swiper-container">
+                                    <div class="swiper-wrapper">
+                                        <% (1..10).each do |n| %>
+                                            <div class="swiper-slide">
+                                                <%= n %>
+                                            </div>
+                                        <% end %>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="form__section tac">
+                    <div class="form__fld">
+                        <div class="checkboxHolder">
+                            <input id="cb1" type="checkbox" class="checkbox"/>
+                            <label for="cb1">Я согласен на обработку моих данных</label>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btnGn" type="submit">подтвердить</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+<%= render :partial => "js" %>
+
+</body>
+</html>
+
+

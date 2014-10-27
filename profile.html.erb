@@ -1,0 +1,58 @@
+<%= render :partial => "head", :locals => {:bodyClass => ""} %>
+
+<%= render :partial => "swiperModal" %>
+<%= render :partial => "menu" %>
+
+
+
+<div class="container">
+    <div class="scroller">
+        <header class="header">
+            <span class="header__btnMenu">Изменение пароля</span>
+            <span class="header__btnPlus"></span>
+        </header>
+        <div class="content login">
+            <form class="form" action="/">
+                <p class="avaInput">
+                    <label style="background-image: url(images/temp/_ava@2x.jpg);" for="avaInputFile"></label>
+                    <input id="avaInputFile" type="file"/>
+                </p>
+
+                <div class="form__section">
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="Имя Фамилия"/>
+                    </div>
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="E-mail" value="welcome@bigdig.com"/>
+                    </div>
+                    <div class="form__fld">
+                        <input type="text" class="icontrol" placeholder="Телефон" value="+38 (093) 12-34-567"/>
+                    </div>
+                </div>
+
+                <span class="btnChangePass"><i class="icon icon_key"></i>Изменить пароль</span>
+
+                <div class="form__section form__section_hidden">
+                    <div class="form__fld">
+                        <input type="password" class="icontrol" placeholder="Придумайте новый пароль"/>
+
+                        <div class="form__fld__hint form__fld__hint_gray">
+                            Более шести символов
+                        </div>
+                    </div>
+                    <div class="form__fld">
+                        <input type="password" class="icontrol" placeholder="Повторите новый пароль"/>
+                    </div>
+                </div>
+
+                <button class="btnGn" type="submit">сохранить изменения</button>
+            </form>
+        </div>
+    </div>
+</div>
+<%= render :partial => "js" %>
+
+</body>
+</html>
+
+

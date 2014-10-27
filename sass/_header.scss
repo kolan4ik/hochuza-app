@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    background-color: #b05649;
+    padding: 4px 7px 0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    height: 35px;
+    z-index: 999;
+    @include box-sizing(border-box);
+    color: #fff;
+
+}
+
+.header__btnMenu {
+    font-size: 16px;
+    font-family: "helveticaneuecyrlight";
+    float: left;
+    line-height: 18px;
+    display: block;
+    cursor: pointer;
+    position: relative;
+    padding: 5px 5px 5px 18px;
+    margin-left: -7px;
+    &:before {
+        content: "";
+        width: 12px;
+        height: 14px;
+        position: absolute;
+        left: 0;
+        top: 6px;
+        @include image-2x("../images/icon_menu@2x.png", 12px, 14px);
+        @include bg-image("../images/icon_menu.png", false, true);
+    }
+}
+
+.header__btnPlus {
+    float: right;
+    padding: 5px;
+    cursor: pointer;
+    &:before{
+          content: "";
+        @include image-2x("../images/icon_plus@2x.png", 15px, 15px);
+        @include bg-image("../images/icon_plus.png", false, true);
+
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+    }
+
+}
+   .header__btnPrev{
+       float: left;
+       padding: 5px;
+       cursor: pointer;
+       &:before{
+           content: "";
+           @include image-2x("../images/larr_7x13@2x.png", 7px, 13px);
+           @include bg-image("../images/larr_7x13.png", false, true);
+           display: inline-block;
+           width: 7px;
+           height: 13px;
+       }
+   }
+.header__txt{
+    font-size: 19px;
+    text-align: center;
+    overflow: hidden;
+    padding-right: 17px;
+}

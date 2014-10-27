@@ -1,0 +1,168 @@
+.gldp-default {
+    position: absolute;
+    padding: 4px 0 0;
+    width: 226px !important;
+    top: 0 !important;
+
+}
+.gldp-default .core {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	position: relative;
+	float: left;
+    width: 28px !important;
+    line-height: 28px !important;
+    border: none !important;
+    height: 28px !important;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	cursor: pointer;
+	color: #00ae9d;
+    font-size: 14px !important;
+}
+.core{
+    margin-right: 5px !important;
+}
+/* Cell border */
+.gldp-default .border {
+	border-style: solid;
+	border-width: 0;
+	border-color: #888;
+}
+
+/* Month/Year text and select */
+.gldp-default .monyear.title{
+    width: 70% !important;
+    margin: -5px auto !important;
+}
+.gldp-default .monyear,
+.gldp-default .monyear select {
+	font-size: 16px !important;
+	font-weight: bold;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+    border: none;
+
+
+}
+
+/* Month/Year text */
+.gldp-default .monyear span {
+	margin: 0 5px 0 5px;
+    color: #00ad9d;
+    font-family: "HelveticaNeueCyr";
+    font-size: 16px;
+    font-weight: normal;
+}
+.core span:nth-child(3){
+    display: none;
+}
+/* Prev/Next arrows */
+.gldp-default .prev-arrow,
+.gldp-default .next-arrow {
+	color: #222;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.75);
+}
+
+.gldp-default .prev-arrow:active,
+.gldp-default .next-arrow:active {
+	color: #f00;
+}
+
+.gldp-default .prev-arrow-off,
+.gldp-default .next-arrow-off {
+	color: #222;
+	opacity: 0.15;
+}
+
+/* Days of the week */
+.gldp-default .dow {
+    display: none;
+}
+
+/* Weekdays */
+.gldp-default .mon,
+.gldp-default .tue,
+.gldp-default .wed,
+.gldp-default .thu,
+.gldp-default .fri {
+    display: inline-block;
+    height: 28px;
+    width: 28px;
+    text-align: center;
+    line-height: 28px;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14px;
+    width: 28px !important;
+    border: none !important;
+    height: 28px !important;
+    display: inline-block;
+    line-height: 28px !important;
+    color: #00ae9d;
+}
+
+/* Weekend days */
+.gldp-default .sat,
+.gldp-default .sun {
+    color: #00ae9d;
+    line-height: 28px !important;
+    vertical-align: middle;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14px;
+    width: 28px !important;
+    border: none !important;
+    height: 28px !important;
+    text-align: center;
+}
+
+/* Selectable days that are outside of current month being shown */
+.gldp-default .outday {
+    color: #c3c2c3 !important;
+    width: 28px !important;
+    height: 28px !important;
+    border: none !important;
+}
+
+.gldp-default .selected {
+    text-align: center;
+    color: #fefefe;
+    font-family: "HelveticaNeueCyr";
+    font-size: 14px;
+    width: 28px !important;
+    height: 28px !important;
+    -moz-border-radius: 14px;
+    -webkit-border-radius: 14px;
+    border-radius: 14px;
+    background-color: #00ad9d;
+    display: inline-block;
+    line-height: 28px !important;
+    border: none !important;
+
+}
+
+.prev-arrow{
+    color: transparent;
+    font-size: 0;
+    width: 9px;
+    height: 16px;
+    display: block;
+    margin: 0 0 0 29px;
+    z-index: 10;
+    position: relative;
+}
+.next-arrow{
+    color: transparent;
+    font-size: 0;
+    width: 9px;
+    height: 16px;
+    display: block;
+    margin: 0 0 0 -16px;
+    z-index: 10;
+    position: relative;
+}
+
+
+.datepicker {
+
+}

@@ -1,0 +1,91 @@
+hr {
+    border-color: #cfcfcf;
+}
+
+strong {
+    font-family: helveticaneuecyr;
+    font-weight: normal;
+}
+
+.wysiwygArea {
+    p {
+        &.lead {
+
+        }
+        -moz-hyphens: auto;
+        -webkit-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+
+    blockquote {
+
+    }
+
+    cite {
+
+    }
+
+    img {
+
+    }
+
+    .listingImg {
+
+    }
+
+    a:hover {
+
+    }
+
+    h1, h2, h3, h4 {
+
+    }
+
+    h1 {
+
+    }
+    h2 {
+
+    }
+    h3 {
+
+    }
+    h4 {
+
+    }
+
+    ul {
+
+        li {
+
+        }
+    }
+
+    ol {
+
+        li {
+
+        }
+
+    }
+
+    table {
+
+    }
+    th, td {
+
+    }
+
+    th {
+
+    }
+    td {
+
+    }
+
+    th:first-child,
+    td:first-child {
+
+    }
+}

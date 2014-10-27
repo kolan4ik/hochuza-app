@@ -1,0 +1,76 @@
+<%= render :partial => "head", :locals => {:bodyClass => ""} %>
+
+<%= render :partial => "menu" %>
+
+<div class="container">
+
+    <div class="scroller">
+        <header class="header">
+            <span class="header__btnMenu">Мои заявки</span>
+            <span class="header__btnPlus"></span>
+        </header>
+        <div class="content">
+            <form class="form" action="/">
+                <div class="form__fld form__fld_search">
+                    <input type="text" class="icontrol" placeholder="Поиск по заявкам..."/>
+                    <button type="submit"></button>
+                </div>
+            </form>
+
+
+            <div class="orders">
+                <ul class="orders__menu orders__menu_3">
+                    <li class="selected"><a href="#">Все</a></li>
+                    <li><a href="#">активные</a></li>
+                    <li><a href="#">закрытые</a></li>
+                </ul>
+                <div class="listing1">
+                    <div class="listing1__item">
+                        <a href="#" class="listing1__item__rarr"></a>
+
+                        <div class="listing1__item__img">
+
+                            <img src="images/temp/small-photo2.jpg" alt=""/>
+
+                            <span class="listing1__item__img__qnt">3</span>
+                            <span class="listing1__item__img__label">3/5</span>
+                        </div>
+                        <div class="listing1__item__content">
+                            <p>
+                                От Земли Луна удалена всего-то на 380 000 км.
+                                Это единственный внеземной мир космоса...
+                            </p>
+                            <span class="listing1__item__price">До <strong>2 000</strong> грн</span>
+                        </div>
+                    </div>
+                    <div class="listing1__item disabled">
+                        <a href="#" class="listing1__item__rarr"></a>
+
+                        <div class="listing1__item__img">
+
+                            <img src="images/temp/small-photo2.jpg" alt=""/>
+
+                            <span class="listing1__item__img__qnt">3</span>
+                            <span class="listing1__item__img__label">3/5</span>
+                        </div>
+                        <div class="listing1__item__content">
+                            <p>
+                                От Земли Луна удалена всего-то на 380 000 км.
+                                Это единственный внеземной мир космоса...
+                            </p>
+                            <span class="listing1__item__price">До <strong>2 000</strong> грн</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<%= render :partial => "js" %>
+
+</body>
+</html>
+
+
