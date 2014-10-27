@@ -13,8 +13,6 @@ $(window).load(function () {
         });
     }
 
-    $('.datepicker > div.gldp-default').addClass('swiper-wrapper');
-
     modal();
     ordersMenu();
     btnExpand();
@@ -28,20 +26,6 @@ $(window).load(function () {
 
 });
 function swipeDatepicker(){
-    //var mySwiper = $('.datepicker').swiper({
-    //    mode:'vertical',
-    //    onSlideChangeStart: function(swiper){
-    //        alert('Hello 1');
-    //    },
-    //    onSlideChangeEnd: function () {
-    //        alert('Hello 2');
-    //    }
-    //})
-    //$('.datepicker').on('mouseover', function(){
-    //    alert('1')
-//
-    //})
-
     $(".datepicker").swipe({
         swipeLeft:function(event, direction, distance, duration, fingerCount) {
             $('.prev-arrow').click();
