@@ -1,12 +1,5 @@
 $(window).load(function () {
 
-    modal();
-    ordersMenu();
-    btnExpand();
-    btnChangePass();
-    handsomeInit();
-    swipeSpinner();
-    menu();
 
     if ($.fn.glDatePicker !== undefined ) {
         $( ".mydate" ).each(function( index ) {
@@ -20,11 +13,49 @@ $(window).load(function () {
         });
     }
 
-});
+    $('.datepicker > div.gldp-default').addClass('swiper-wrapper');
 
+    modal();
+    ordersMenu();
+    btnExpand();
+    btnChangePass();
+    handsomeInit();
+    swipeSpinner();
+    menu();
+    swipeDatepicker();
+
+
+
+});
+function swipeDatepicker(){
+    //var mySwiper = $('.datepicker').swiper({
+    //    mode:'vertical',
+    //    onSlideChangeStart: function(swiper){
+    //        alert('Hello 1');
+    //    },
+    //    onSlideChangeEnd: function () {
+    //        alert('Hello 2');
+    //    }
+    //})
+    //$('.datepicker').on('mouseover', function(){
+    //    alert('1')
+//
+    //})
+
+    $(".datepicker").swipe({
+        swipeLeft:function(event, direction, distance, duration, fingerCount) {
+            $('.prev-arrow').click();
+        },
+        swipeRight:function(event, direction, distance, duration, fingerCount) {
+            $('.next-arrow').click();
+
+        }
+    });
+}
 function menu() {
     $('body').on('swiperight', function(){
         menuShow();
+
     })
 
     $('.header__btnMenu').on('click', function(){
@@ -39,6 +70,7 @@ function menu() {
         menuClose();
     })
 }
+
 function menuShow() {
     $('.menu').animate({left: 0},300);
     $('.overlay').fadeIn(300);
